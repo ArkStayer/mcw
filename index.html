@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Кликер Мейва</title>
+</head>
+<body>
+<script>
+    document.body.style.backgroundColor = "#017E84";
+</script>
+    <p>Current Count: <span id="counter">0</span></p>
+    <button id="increment-button">Tap</button>
+    <img src="maewing.png">
+
+    <script>
+        // Select the counter display and button
+        const counterDisplay = document.getElementById('counter');
+        const incrementButton = document.getElementById('increment-button');
+
+        // Initialize the counter
+        let count = 0;
+
+        // Add an event listener to the button
+        incrementButton.addEventListener('click', function () {
+            count++; // Increment the count
+            counterDisplay.textContent = count; // Update the counter display
+        });
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
